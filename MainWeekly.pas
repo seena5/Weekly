@@ -5,11 +5,14 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, sMaskEdit,
-  sCustomComboEdit, sToolEdit, Data;
+  sCustomComboEdit, sToolEdit, Data, Vcl.ComCtrls, sTabControl, Vcl.Grids,
+  AdvObj, BaseGrid, AdvGrid;
 
 type
   TForm1 = class(TForm)
     sDateEdit1: TsDateEdit;
+    sTabControl1: TsTabControl;
+    AdvStringGrid1: TAdvStringGrid;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
